@@ -1,0 +1,21 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1
+        with:
+          deploy-dir: ./ # Patience-Patience-Projects index.html
+          site-id: ${{6901d1808155ffbe0383ef4b]  }}
+          auth-token: ${{  }}
